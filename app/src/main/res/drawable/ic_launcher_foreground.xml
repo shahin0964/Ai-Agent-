@@ -1,0 +1,55 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Outer Holographic Ring (66dp circle centered at 54,54) -->
+    <path
+        android:strokeColor="#5000F0FF"
+        android:strokeWidth="1.5"
+        android:pathData="M 54,26 A 28,28 0 1,1 53.9,26 Z" />
+
+    <!-- Orbital Arcs -->
+    <path
+        android:strokeColor="#00F0FF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 33,37 A 28,28 0 0,1 75,37" />
+    <path
+        android:strokeColor="#7C3AED"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M 75,71 A 28,28 0 0,1 33,71" />
+
+    <!-- Inner Rotating Ring -->
+    <path
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 36,54 A 18,18 0 1,1 72,54" />
+
+    <!-- Central Glowing Core -->
+    <path
+        android:pathData="M 54,43 A 11,11 0 1,1 53.9,43 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="46"
+                android:startY="46"
+                android:endX="62"
+                android:endY="62"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF" />
+                <item android:offset="0.4" android:color="#FF00F0FF" />
+                <item android:offset="1.0" android:color="#FF3B82F6" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Core Crosshairs / Neural Nodes -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M 54,34 L 54,38 M 54,70 L 54,74 M 34,54 L 38,54 M 70,54 L 74,54" />
+</vector>

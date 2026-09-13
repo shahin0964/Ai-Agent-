@@ -1,0 +1,6 @@
+{
+  "name": "AI Agent",
+  "description": "Futuristic personal AI agent command center foundation and UI architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
